@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="logo"><a href="../home/index.html"><img src="../resources/Logo.png" alt="airnb logo"></a></div>
+            <div class="header-right">
+                <div class="globe"><img src="../resources/globe.png" alt="globe"></div>
+                <div class="profile-drop"><img src="../resources/Profile Dropdown.png" alt="profile drop down"></div>
+            </div>
+            <div class="hamburger">
+                <div id="logout"><a href="../home/index.html">Logout</a></div>
+                <div class="close-hamburger">❌️</div>
+            </div>
+        </header>
+        <section class="profile">
+            <div class="profile-left">
+                <a href="#profileDetails"><div class="profile-left-top"><div>Profile</div></div></a>
+                <a href="#bookings"><div class="profile-left-bottom"><div>Bookings</div></div></a>
+                <a href="#listings"><div class="host-listings"><div>Listings</div></div></a>
+            </div>
+            <div class="profile-right" id="profileDetails">
+                <div class="profile-right-details">
+                    <div>User I'd: <div class="id-detail"></div></div>
+                    <div>Username: <div class="name-detail"></div></div>
+                    <div>Email: <div class="mail-detail"></div></div>
+                    <div>User-type: <div class="role-detail"></div></div>
+                </div>
+                <div class="bookings" id="bookings">
+                    <div class="booking-top">
+                        <div>Booking Id</div>
+                        <div>Hotel</div>
+                        <div>Guest Count</div>
+                        <div>Check-In</div>
+                        <div>Check-Out</div>
+                        <div>Amount</div>
+                        <div>Status</div>
+                    </div>
+                    <div class="booking-bottom">
+                    </div>
+                </div>
+                <div class="my-listings" id="myListings">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="profileScript.js"></script>
+</body>
+</html>

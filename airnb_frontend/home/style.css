@@ -1,0 +1,760 @@
+* {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: #f1d0d6;
+}
+
+.header {
+    padding: 18px 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 20px;
+    cursor: pointer;
+}
+
+nav {
+    margin-left: 200px;
+    width: 40%;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #DE3151;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #DE3151;
+}
+
+.places-to-stay{
+    display: flex;
+}
+
+.create-listings{
+    display: none;
+}
+
+.header-right {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.become-host {
+    cursor: pointer;
+    display: flex;
+}
+
+.profile-drop {
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 2;
+    right: 60px;
+    top: 70px;
+    height: 210px;
+    width: 200px;
+}
+
+.hamburger div {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.hamburger div a {
+    text-decoration: none;
+    color: black;
+}
+
+.close-hamburger {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+#signUp {
+    cursor: pointer;
+}
+
+#login {
+    cursor: pointer;
+}
+
+#profile {
+    cursor: pointer;
+    display: none;
+}
+
+#logout {
+    cursor: pointer;
+    display: none;
+}
+
+.hero-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55rem;
+}
+
+.hero-section-top {
+    background-color: white;
+    border-radius: 50px;
+    height: 70px;
+    width: 50rem;
+    margin-bottom: 20px;
+}
+
+.hero-section-top form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hero-section-top form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section-top form div input {
+    border: none;
+    height: 30px;
+    font-size: 14px;
+    color: rgb(136, 134, 134);
+}
+
+.hero-section-top form img {
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.hero-section-bottom {
+    height: 700px;
+    width: 85rem;
+}
+
+.hero-section-bottom img {
+    height: 100%;
+    width: 100%;
+}
+
+.login-page {
+    border: 1 px solid blue;
+    background-color: white;
+    border-radius: 50px;
+    position: fixed;
+    height: 450px;
+    width: 600px;
+    top: 200px;
+    right: 500px;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.login-page form div {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.login-page form div input {
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.submit-login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-login-page button {
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.submit-login-page div {
+    display: flex;
+}
+
+.login-page form .error-mail {
+    height: 20px;
+    color: red;
+    padding-left: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+.login-page form .error-password {
+    height: 20px;
+    color: red;
+    padding-left: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+.create-account {
+    color: blue;
+    cursor: pointer;
+}
+
+.close-login-page {
+    position: relative;
+    right: -250px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sign-up-page {
+    border: 1 px solid blue;
+    background-color: white;
+    border-radius: 50px;
+    position: fixed;
+    height: 450px;
+    width: 600px;
+    top: 200px;
+    right: 500px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.sign-up-page form div {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.sign-up-page form div input {
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.submit-sign-up-page button {
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.close-sign-up-page {
+    position: relative;
+    right: -250px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sign-up-page .sign-error-name {
+    height: 20px;
+    color: red;
+    padding-left: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+.sign-up-page .sign-error-mail {
+    height: 20px;
+    color: red;
+    padding-left: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+.sign-up-page .sign-error-password {
+    height: 20px;
+    color: red;
+    padding-left: 30px;
+    font-size: 17px;
+    display: none;
+}
+
+.become-host-page {
+    border: 1 px solid blue;
+    background-color: white;
+    border-radius: 50px;
+    position: fixed;
+    height: 450px;
+    width: 600px;
+    top: 200px;
+    right: 500px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.become-host-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.become-host-page form div {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.become-host-page form div input {
+    height: 50px;
+    border-radius: 30px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.submit-become-host-page button {
+    height: 50px;
+    width: 100px;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.close-become-host-page {
+    position: relative;
+    right: -250px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.profile {
+    background-color: rgba(255, 203, 211, 0.623);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.profile-left {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.profile-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-left-top {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f08397;
+    border-bottom: 1px solid black;
+}
+
+.profile-left-top div {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-left-bottom {
+    background-color: #f08397;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.profile-left-bottom div {
+    font-size: 20px;
+    cursor: pointer;
+}
+.host-listings{
+    background-color: #f08397;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.host-listings div{
+    font-size: 20px;
+    cursor: pointer;
+}
+.profile-right {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-right-details {
+    background-color: #DE3151;
+    border-radius: 50px;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-right-details div {
+    color: white;
+}
+
+.profile-right-details div div {
+    background-color: white;
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+    color: black;
+}
+.bookings{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #f7a3b2;
+}
+
+.booking-top{
+    height: 15%;
+    width: 100%;
+    background-color: #DE3151;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.booking-top div{
+    border-right: 1px solid black;
+    background-color: #DE3151;
+    height: 20px;
+    width: 14%;
+    text-align: center;
+    font-size: 20px;
+}
+.booking-bottom{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+.booking-bottom-element{
+    border-bottom: 1px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.booking-bottom-element div{
+    background-color: white;
+    height: 35px;
+    width: 14%;
+    text-align: center;
+}
+.my-listings{
+    display: flex;
+    background-color: white;
+    border-left: 1px solid black;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    
+}
+.my-listing{
+    background-color: #e65771;
+    padding: 40px;
+    margin: 50px 100px;
+    display: flex;
+    height: 380px;
+    width: 80%;
+    border-radius: 30px;
+}
+.my-listing-left{
+    width: 400px;
+}
+.my-listing-left img {
+    width: 400px;
+    height: 100%;
+    padding-top: 10px;
+}
+.my-listing-right{
+    width: 500px;
+    position: relative;
+    left: 100px;
+}
+.listings {
+    background-color: #f1d0d6;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.listing {
+    background-color: #e65771;
+    padding: 40px;
+    margin: 50px 100px;
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    border-radius: 30px;
+}
+
+.listing-left {
+    width: 400px;
+}
+
+.listing-left img {
+    width: 400px;
+    height: 100%;
+}
+.listing-right{
+    width: 500px;
+    position: relative;
+    left: 100px;
+}
+.listing-right button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    left: 340px;
+    top: 80px;
+    cursor: pointer;
+}
+.listing-right button:hover{
+    background-color: white;
+    color: black;
+}
+.booking-page{
+    background-color: white;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 2;
+    height: 350px;
+    width: 300px;
+    top: 150px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.booking-page div{
+    color: black;
+    font-size: 17px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.booking-page div input{
+    height: 20px;
+    width: 200px;
+}
+.booking-page button{
+    position: relative;
+    left: 3px;
+    top: -10px;
+    width: 200px;
+    height: 35px;
+    background-color: #2196F3;
+    border: 1px solid black;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.booking-page div .close-book{
+    padding: 0px;
+    margin: 0px;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 0px;
+    right: -220px;
+    cursor: pointer;
+}
+
+.generate-listings{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+
+}
+.listings-create-section{
+    background-color: #DE3151;
+    height: 800px;
+    width: 900px;
+    display: flex;
+}
+.listings-left{
+    border-right: 1px solid black;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.listings-left div{
+    display: flex;
+    flex-direction: column;
+}
+.blank-image{
+    height: 200px;
+    width: 300px;
+}
+.blank-image img{
+    height: 100%;
+    width: 100%;
+}
+.listings-right{
+    width: 60%;
+}
+.listings-right form{
+    padding: 10px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.listings-right form div{
+    height: 60px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.listings-right form div input[type="text"]{
+    height: 20px;
+}
+.listings-right form button{
+    width: 80px;
+    height: 40px;
+    border-radius: 15px ;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+.listings-right form button:hover{
+    background-color: white;
+    color: black;
+}
+#cancel-section{
+    height: 100px;
+}
+#cancel-section div{
+    background-color:#eb6d84;
+    padding: 0px 10px;
+}
+#cancel-section div input{
+    border: 1px solid black;
+    position: relative;
+    top: 15px;
+    left: -20px;
+}

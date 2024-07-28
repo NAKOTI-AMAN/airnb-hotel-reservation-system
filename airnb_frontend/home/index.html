@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Airnb</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header" id="header">
+            <div class="logo"><a href="#header"><img src="../resources/Logo.png" alt="airnb logo"></a></div>
+            <nav>
+                <ul>
+                    <li class="places-to-stay"><a href="../listings/listings.html">Places to stay</a></li>
+                    <li class="create-listings"><a href="../createListings/createListings.html">Create Listings</a></li>
+                    <li>Experiences</li>
+                    <li>Online Experiences</li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="become-host">Become a Host</div>
+                <div class="globe"><img src="../resources/globe.png" alt="globe"></div>
+                <div class="profile-drop"><img src="../resources/Profile Dropdown.png" alt="profile drop down"></div>
+            </div>
+            <div class="hamburger">
+                <div id="signUp">Sign-Up</div>
+                <div id="profile"><a href="../profile/profile.html">Profile</a></div>
+                <div id="login">Login</div>
+                <div id="logout">Logout</div>
+                <div class="close-hamburger">❌️</div>
+            </div>
+        </header>
+        <section class="hero-section">
+            <div class="hero-section-top">
+                <form>
+                    <div>
+                        <label>Location</label>
+                        <input type="text" placeholder="Where are you going?">
+                    
+                    </div>
+                    <div>
+                        <label>Check in</label>
+                        <input type="date" required>
+                    </div>
+                    <div>
+                        <label>Check out</label>
+                        <input type="date" required>
+                    </div>
+                    <div>
+                        <label>Guests</label>
+                        <input type="text" placeholder="Add guests">
+                    </div>
+                    <div>
+                        <img src="../resources/Icon Button Base.png" alt="search">
+                    </div>
+                </form>
+            </div>
+            <div class="hero-section-bottom"><img src="../resources/airnbHome.jpeg" alt=""></div>
+        </section>
+        <section class="login-page">
+            <div class="close-login-page">❌️</div>
+            <form>
+                Login
+                <div>
+                    <label>Email</label>
+                    <input type="mail" placeholder="Enter your email" id="mail">
+                    <div class="error-mail"></div>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" id="password">
+                    <div class="error-password"></div>
+                </div>
+            </form>
+            <div class="submit-login-page">
+                <button onclick=submit_login()>Submit</button>
+                <div>Don't have an account? <div class="create-account"> Sign-Up </div></div>
+            </div>
+        </section>
+        <section class="sign-up-page">
+            <div class="close-sign-up-page">❌️</div>
+            <form>
+                Sign-Up
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your name" id="username">
+                    <div class="sign-error-name"></div>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="mail" placeholder="Enter your email" id="signMail">
+                    <div class="sign-error-mail"></div>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" id="signPassword">
+                    <div class="sign-error-password"></div>
+                </div>
+            </form>
+            <div class="submit-sign-up-page">
+                <button onclick=submit_signUp()>Submit</button>
+            </div>
+        </section>
+        <section class="become-host-page">
+            <div class="close-become-host-page">❌️</div>
+            <form>
+                Become a Host
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your name" id="hostUsername">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="mail" placeholder="Enter your email" id="hostMail">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password" id="hostPassword">
+                </div>
+            </form>
+            <div class="submit-become-host-page">
+                <button onclick=submit_host()>Submit</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

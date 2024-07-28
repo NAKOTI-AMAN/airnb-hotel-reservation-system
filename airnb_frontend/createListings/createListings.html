@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create-Listings</title>
+    <link rel="stylesheet" href="../home/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <header class="header" id="header">
+        <div class="logo">
+          <a href="../home/index.html"><img src="../resources/Logo.png" alt="airnb logo"/></a>
+        </div>
+      </header>
+      <section class="generate-listings">
+        <div class="listings-create-section">
+          <div class="listings-left">
+            <div>
+              <label>Hotel Image</label>
+              <div class="blank-image"><img src="../resources/blankImage.jpg" alt="blank image" id="blank"></div>
+              <input type="file" id="image">
+            </div>
+          </div>
+          <div class="listings-right">
+            <form onsubmit="return false">
+              <div>
+                <label>Title</label>
+                <input type="text" id="title">
+              </div>
+              <div>
+                <label>Subtitle</label>
+                <input type="text" id="subtitle">
+              </div>
+              <div>
+                <label>Description</label>
+                <input type="text" id="description">
+              </div>
+              <div>
+                <label>Location</label>
+                <input type="text" id="location">
+              </div>
+              <div>
+                <label>Rate</label>
+                <input type="text" id="rate">
+              </div>
+              <div>
+                <label>Daily Discount</label>
+                <input type="text" id="dayDiscount">
+              </div>
+              <div>
+                <label>Weekly Discount</label>
+                <input type="text" id="weekDiscount">
+              </div>
+              <div>
+                <label>Cleaning Fee</label>
+                <input type="text" id="cleaningFee">
+              </div><div>
+                <label>Service Fee</label>
+                <input type="text" id="serviceFee">
+              </div>
+              <div>
+                <label>Occupancy</label>
+                <input type="text" id="occupancy">
+              </div>
+              <div id="cancel-section">
+                <label>Cancellation Allowed</label>
+                <div><input type="radio" id="allowed" name="cancellation" value="Allowed"><label for="allowed">Allowed</label></div>
+                <div><input type="radio" id="notAllowed" name="cancellation" value="Not_Allowed"><label for="notAllowed">Not Allowed</label></div>
+              </div>
+              <button onclick=create_listings()>Create</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="generateListings.js"></script>
+  </body>
+</html>
